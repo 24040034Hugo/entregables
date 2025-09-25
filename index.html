@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Programas</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" type="image/x-icon" href="style/index.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Programas</h1>
+    </header>
+
+    <nav>
+        <button onclick="cargarPrograma('calculadora.html')">📱 Calculadora</button>
+        <button onclick="cargarPrograma('empleados.html')">👥 Empleados</button>
+        <button onclick="cargarPrograma('cuadrado.html')">🟦 Cuadrado</button>
+        <button onclick="limpiarVisor()">🏠 Inicio</button>
+    </nav>
+
+    <main>
+        <div id="contenedor-visor">
+            <div class="mensaje-inicial" id="mensaje-inicial">
+                <div>
+                    <h3>Bienvenido al Portal de Programas</h3>
+                    <p>Selecciona un programa de los botones superiores para comenzar</p>
+                </div>
+            </div>
+            <iframe id="visor" src="" title="Visor de programas" style="display: none;"></iframe>
+            <div id="error-mensaje" class="error-mensaje" style="display: none;"></div>
+        </div>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

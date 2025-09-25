@@ -1,0 +1,95 @@
+/* ----- Fondo general ----- */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #d7e1ec 0%, #f0f4f8 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ----- Tarjeta principal ----- */
+.contenedor {
+    background: #ffffff;
+    padding: 35px 45px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.contenedor:hover {
+    transform: translateY(-4px);
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+/* ----- Fila de cálculo ----- */
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.fila input[type="number"],
+.fila input[type="text"] {
+    width: 70px;
+    padding: 8px 5px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    transition: border-color 0.3s;
+}
+.fila input:focus {
+    outline: none;
+    border-color: #2196f3;
+}
+
+.fila span {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 5px;
+    color: #555;
+}
+
+/* Operador invisible al inicio */
+.oculto {
+    visibility: hidden;
+}
+
+/* ----- Botones de operaciones ----- */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 12px 0;
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #1976d2;
+}
+
+button:active {
+    transform: scale(0.95);
+}
